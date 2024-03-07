@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="border border-gray-200 m-4 p-3 flex justify-between items-center">
       <div className="flex gap-2">
-        <h1 className="text-white">menu</h1>
+        <h1 className="text-white">Logo</h1>
         <div className="border bg-gray-800 w-[2px]" />
       </div>
       <div>
