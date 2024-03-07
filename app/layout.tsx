@@ -19,10 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <LayoutContainer>
         <body className={`${inter.className}`}>
-          <Navbar /> {/* Always display the Navbar at the top */}
-          <div className="flex flex-col mt-[5rem]"> {/* Adjust margin-top to accommodate Navbar height */}
+      {/* Always display the Navbar at the top */}
             <div className="flex-grow">{children}</div> {/* Rest of the content below the Navbar */}
-          </div>
         </body>
       </LayoutContainer>
     </html>
