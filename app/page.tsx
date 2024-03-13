@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <div>
       <BrowserRouter>
-      <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
