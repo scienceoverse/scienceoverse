@@ -4,7 +4,7 @@ import Homepage from "./Homepage/page";
 import About from "./about/page";
 import Contact from "./contact/page";
 import Events from "./events/page";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
