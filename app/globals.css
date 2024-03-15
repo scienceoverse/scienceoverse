@@ -2,8 +2,124 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css */
+/* globals.css */
 body {
-    background-color: #03001C;
-    color: aqua;
-    margin: 1rem;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #999;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  width: 90%;
+  top: 1rem;
+  z-index: 9999;
+  padding: 12px;
+  background-color: #111111;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  /* background-color: #111111; */
+}
+
+.nav-links > * {
+  margin-right: 20px;
+  padding: 6px;
+  border-radius: 30px;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: white;
+  /* background-color: #111111; */
+}
+
+.nav-links > *:hover {
+  background: #6b46c1;
+  color: #fff;
+}
+
+.button {
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #6b46c1, #03001c);
+  color: white;
+}
+
+.button:hover {
+  color: #ffffff;
+  background: linear-gradient(45deg, #03001c, #6b46c1);
+}
+
+.menu-button {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #111111;
+  }
+  .nav-links.active {
+    display: flex;
+    height: auto;
+  }
+  .button {
+    margin-top: 10px;
+  }
+}
+
+.container {
+  padding-top: 7rem;
+  padding-left: 1rem;
+  max-width: 100%;
+  padding-right: 1.5rem;
+  height: 100vh;
+}
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value (fourth parameter) for transparency */
+  z-index: -1;
 }
