@@ -1,7 +1,7 @@
 import React from "react";
-import "../globals.css";
+import "../../app/globals.css";
 
-const page = () => {
+const Home = () => {
   return (
     <div className="container">
       <video
@@ -16,7 +16,7 @@ const page = () => {
       </video>
       <div className="overlay"></div>
       <div className="flex flex-col justify-center items-center h-[30rem]">
-        <h1 className="font-sans  mt-[5rem] bg-gradient-to-r from-blue-500 to-purple-800 text-transparent bg-clip-text font-extrabold md:text-[5rem] sm:text-[3rem] text-center">
+        <h1 className="font-sans  mt-[5rem] bg-gradient-to-r from-blue-500 to-purple-800 text-transparent bg-clip-text font-extrabold md:text-[4rem] sm:text-[3rem] text-center">
           The Beginnig of a Scientific Revolution
         </h1>
         <h2 className="mx-[2rem] my-[1rem] font-sans mt-2 text-[2rem] text-center">
@@ -24,7 +24,7 @@ const page = () => {
         </h2>
         <button className="mt-[2rem] relative inline-flex items-center justify-center p-0.5 mb-2 me-2 text-[1.5rem] font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
           <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-            Purple to blue
+            Join our Community
           </span>
         </button>
       </div>
@@ -34,4 +34,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;
