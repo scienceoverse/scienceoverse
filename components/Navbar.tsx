@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className="navbar rounded-3xl">
       <div className="navbar-wrapper">
-        <Link href="/" className="rounded-full">
+        <Link href="/" className="rounded-full mix-blend-color-dodge">
           <Image src={logo} alt="logo" width={250} height={50} />
         </Link>
         <div
@@ -40,7 +40,7 @@ const Navbar = () => {
           }`}
         >
           {navs.map((nav, index) => (
-            <Link href={nav.link} key={index} className="nav-link">
+            <Link href={nav.link} key={index} className="px-3 py-2">
               {nav.name}
             </Link>
           ))}
