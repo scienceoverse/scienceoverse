@@ -1,9 +1,9 @@
 import React from 'react'
-import Events from '@/components/events/page'
+import Home from '@/components/homepage/homepage'
 
 const page = () => {
   return (
-    <Events />
+    <Home />
   )
 }
 
