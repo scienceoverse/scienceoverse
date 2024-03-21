@@ -1,8 +1,9 @@
-import React from "react";
-import Navbar from "../../components/Navbar";
+import React from 'react'
+import About from '@/components/about/page'
+const aboutpage = () => {
+  return (
+    <About />
+  )
+}
 
-const About = () => {
-  return <div>This is the about page here</div>;
-};
-
-export default About;
+export default aboutpage;
