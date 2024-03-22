@@ -24,8 +24,10 @@ export default function RootLayout({
           <div className="flex justify-center">
             <Navbar />
           </div>
-          <main>{children}</main>
-          <Footer />
+          <main>
+            {children}
+          </main>
+            <Footer />
         </body>
       </LayoutContainer>
     </html>
