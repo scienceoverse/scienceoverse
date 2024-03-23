@@ -1,13 +1,29 @@
-import React from 'react'
+'use client'
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
-  return (
-    <div className='flex gap-2 justify-between items-center'>
-        <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, quis quibusdam iste quas nobis eaque distinctio dicta similique, quidem suscipit dolore veniam nihil doloribus pariatur reprehenderit odit odio quaerat vel et aliquid fugit. Commodi voluptas sed nihil fuga sit a accusantium cum ex nisi praesentium facere quo iure optio, est quod modi reprehenderit omnis magnam. Dolorum doloribus blanditiis tempore quia quidem modi provident odio dolore labore omnis sint cupiditate officia, a fugiat dolores. Neque quia id nulla a, soluta ullam tenetur maxime distinctio commodi cupiditate. Corporis vitae minima harum esse nesciunt, doloremque facilis voluptate, quidem quibusdam aperiam aut, odio incidunt!
-        </div>
-    </div>
-  )
-}
 
-export default Footer
+  const curryear = new Date().getFullYear();
+
+  return (
+    <footer className={`flex bottom-0 gap-2 w-full justify-between items-center z-10 bg-gray-900 text-white py-4`}>
+      <div className="mx-auto flex gap-3 justify-between items-center">
+        <p>&copy; {curryear} ScienceOVerse</p>
+        <ul className="flex space-x-4">
+          <li>
+            <Link href="/home">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About Us</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
